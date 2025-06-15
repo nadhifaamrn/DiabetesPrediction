@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diabetes Prediction - Result</title>
+    <link rel="stylesheet" href="result.css" />
+    <script src="resultFunc.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="about.html">About</a>
+      <img src="img/healthcare.png" alt="logo" id="mainLogo" />
+      <a href="home.html">Home</a>
+    </nav>
+    <div id="content">
+      <div id="yourData">
+        <p class="text" id="header">Your Data</p>
+        <p class="text" id="pregData">Pregnancies:</p>
+        <p class="text" id="gluData">Glucose:</p>
+        <p class="text" id="bloodData">Blood Pressure:</p>
+        <p class="text" id="skinData">Skin Thickness:</p>
+        <p class="text" id="insulinData">Insulin:</p>
+        <p class="text" id="bmiData">BMI:</p>
+        <p class="text" id="funcData">Diabetes Pedigree Function:</p>
+        <p class="text" id="ageData">Age:</p>
+      </div>
+      <div id="yourResult">
+        <p class="text" id="header">Result</p>
+        <p class="text" id="news">Great News!</p>
+        <p class="text">
+          The analysis suggests a low risk of diabetes. Remember, a healthy
+          lifestyle is key to long-term health.
+        </p>
+        <div id="btnBar">
+          <button id="goBack" onClick="goBack()">Fill Form Again</button>
+          <button id="recBtn" onclick="goRec()">Recommendation</button>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="result.js"></script>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prediction Result</title>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        // Ambil prediksi dari localStorage
+        const prediction = localStorage.getItem("diabetesPrediction");
+
+        if (prediction === "0") {
+          // Redirect ke halaman negatif
+          window.location.href = "/negativeresult.html";
+        } else if (prediction === "1") {
+          // Redirect ke halaman positif
+          window.location.href = "/positiveresult.html";
+        } else {
+          // Jika tidak ada prediksi, tampilkan pesan error
+          document.body.innerHTML = "<h1>Error: No prediction available.</h1>";
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Redirecting...</h1>
+  </body>
+</html>

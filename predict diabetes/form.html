@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Diabetes Prediction - Form</title>
+    <link rel="stylesheet" href="form.css" />
+    <script src="form.js"></script>
+  </head>
+  <body>
+    <nav>
+      <a href="about.html">About</a>
+      <img src="img/healthcare.png" alt="logo" id="mainLogo" />
+      <a href="home.html">Home</a>
+    </nav>
+    <div id="content">
+      <p id="header" class="text">Diabetes Prediction</p>
+      <form action="result.html" method="GET" onsubmit="return onSubmit(event)">
+        <div id="form">
+          <div class="perForm">
+            <span
+              ><label for="pregnancies" class="text label">Pregnancies</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="The number of pregnancies affects diabetes risk due to hormonal changes during pregnancy."
+            /></span>
+            <input
+              type="text"
+              id="pregnancies"
+              name="pregnancies"
+              class="input"
+            />
+          </div>
+          <div class="perForm">
+            <span
+              ><label for="glucose" class="text label">Glucose</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="Higher blood glucose levels are a key indicator of potential diabetes."
+            /></span>
+            <br />
+            <input type="text" id="glucose" name="glucose" class="input" />
+          </div>
+          <div class="perForm">
+            <span
+              ><label for="blood-pressure" class="text label"
+                >Blood Pressure</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="High blood pressure is often associated with an increased risk of diabetes."
+            /></span>
+            <input
+              type="text"
+              id="blood-pressure"
+              name="blood-pressure"
+              class="input"
+            />
+          </div>
+          <div class="perForm">
+            <span
+              ><label for="skin-thickness" class="text label"
+                >Skin Thickness</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="Skinfold thickness helps measure body fat, which is a factor in diabetes risk."
+            /></span>
+            <input
+              type="text"
+              id="skin-thickness"
+              name="skin-thickness"
+              class="input"
+            />
+          </div>
+          <div class="perForm">
+            <span
+              ><label for="insulin" class="text label">Insulin</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="Insulin levels indicate how your body regulates blood sugar."
+            /></span>
+            <br />
+            <input type="text" id="insulin" name="insulin" class="input" />
+          </div>
+          <div id="ageForm" class="perForm">
+            <span
+              ><label for="bmi" class="text label">BMI</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="Helps assess whether a person is underweight, normal weight, overweight, or obese, which are key factors in understanding the risk of diabetes."
+            /></span>
+            <br />
+            <input type="text" id="bmi" name="bmi" class="input" />
+          </div>
+          <div class="perForm">
+            <span
+              ><label for="diabetes-pedigree" class="text label"
+                >Diabetes Pedigree Function</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="This factor considers family history of diabetes and its impact on risk."
+            /></span>
+            <input
+              type="text"
+              id="diabetes-pedigree"
+              name="diabetes-pedigree"
+              class="input"
+            />
+          </div>
+          <div id="ageForm" class="perForm">
+            <span
+              ><label for="age" class="text label">Age</label
+              ><img
+                class="help"
+                src="img/question.png"
+                title="Age is a key factor; the risk of diabetes increases as you get older."
+            /></span>
+            <br />
+            <input type="text" id="age" name="age" class="input" />
+          </div>
+          <div id="ageForm" class="perForm">
+            <p id="warning">Hey</p>
+          </div>
+        </div>
+        <div id="btn">
+          <button type="submit" id="submit">Predict</button>
+        </div>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
